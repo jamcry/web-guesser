@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style>
+      #guess-btn {
+        color: <%= button_color %>;
+        font-weight: bold
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WebGuesser</h2>
+    <p>
+      Try to guess my number.
+      I will help you by commenting on your guess<br>and changing the text color.
+    </p>
+    <form>
+      <input type='text' name='guess' autofocus autocomplete='off' />
+      <input type='submit' value='Guess!' id="guess-btn"/>
+    </form>
+    <p>
+      <%= message %>
+    </p>
+  </body>
+</html>
